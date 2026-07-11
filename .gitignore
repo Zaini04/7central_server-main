@@ -1,0 +1,8 @@
+node_modules
+admin
+client
+src/uploads
+src/logs
+src.zip
+.env
+src/boindo-firebase-adminsdk.json

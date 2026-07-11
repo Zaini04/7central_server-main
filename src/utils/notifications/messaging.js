@@ -1,11 +1,12 @@
-const admin = require("firebase-admin");
+// const admin = require("firebase-admin");
 
-const serviceAccount = require('../../boindo-firebase-adminsdk.json');
+// const serviceAccount = require('../../boindo-firebase-adminsdk.json');
 
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-});
+// admin.initializeApp({
+//     credential: admin.credential.cert(serviceAccount),
+// });
 
-const messaging = admin.messaging();
+// const messaging = admin.messaging();
 
-module.exports = messaging;
+// module.exports = messaging;
+module.exports = null;

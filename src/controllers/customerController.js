@@ -196,6 +196,8 @@ exports.getProgress = catchAsync(async (req, res, next) => {
   
   let  steps= {
           general: false,
+          original_buyer:true,
+          referal_program:false,
           nextOfKin: false,
           notifications: false,
           documents: false,

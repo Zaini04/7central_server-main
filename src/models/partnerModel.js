@@ -36,6 +36,9 @@ const partnerSchema = new Schema({
         type: String,
         required: true
     },
+    dateOfBirth:{
+type:String,
+    },
      relationType: {
       type: String,
       enum: [...CUSTOMER_RELATION_TYPES],

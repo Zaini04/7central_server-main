@@ -59,6 +59,12 @@ const customerValidationSchema = Joi.object({
   countryName: Joi.string().allow(null, '').optional().messages({
     'string.base': 'Country name must be a string.',
   }),
+  customerType: Joi.string().required().messages({
+    'string.base': ' Customer Type must be a string.',
+  }),
+  dateOfBirth:Joi.string().allow(null, '').messages({
+    'string.base': 'Date of birth must be date.',
+  }),
 image: Joi.string()
   .dataUri()
   .allow(null, "")   // allow empty or null
@@ -124,6 +130,9 @@ const partnerValidationSchema = Joi.object({
   }),
   country: Joi.string().allow(null, '').messages({
     'string.base': 'Country name must be a string.',
+  }),
+  dateOfBirth:Joi.string().allow(null, '').messages({
+    'string.base': 'Date of birth must be date.',
   }),
   // image: Joi.string().allow(null,'').messages({
   //   'string.base': 'Image must be a string.',

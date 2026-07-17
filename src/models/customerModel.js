@@ -18,6 +18,9 @@ const customerSchema = new Schema({
         type: String,
         required: true
     },
+    dateOfBirth:{
+type:String,
+    },
     email : {
         type : String ,
         trim : true , 
@@ -74,6 +77,10 @@ const customerSchema = new Schema({
       type: String,
             default: null,
 
+    },
+    customerType:{
+      type:String,
+      enum:['Original Buyer','Referal']
     },
     countryName: {
       type: String,

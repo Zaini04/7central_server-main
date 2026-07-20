@@ -70,7 +70,6 @@ app.use("/", loggingMiddlewares.respondNoResourceFound);
 // GLOBAL ERROR HANDLER
 app.use("/", require("./middlewares/errorHandler"));
 
-console.log("Server is running")
 // initialize scoket
 const server = http.createServer(app);
     //  processInstallmentReminders();
